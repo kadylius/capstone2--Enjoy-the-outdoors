@@ -56,7 +56,6 @@ function initializeInfoBlock() {
 async function updateInfoBlock(mountain) {
     INFOBLOCK.innerHTML = `
         <div class="d-flex justify-content-center mb-4">
-            <img src="imgs/${mountain.img}" alt="${mountain.name}" class='drop-shadow-img' height="375px">
         </div>
         <hr class="hrlarge my-5">
         <h2 class="card-title">${mountain.name}</h2>
@@ -71,7 +70,6 @@ async function updateInfoBlock(mountain) {
         const sunInfo = await getSunsetForMountain(mountain.coords.lat, mountain.coords.lng);
         INFOBLOCK.innerHTML = `
             <div class="d-flex justify-content-center mb-4">
-                <img src="imgs/${mountain.img}" alt="${mountain.name}" class='drop-shadow-img' height="375px">
             </div>
             <hr class="hrlarge my-5">
             <h2 class="card-title">${mountain.name}</h2>
