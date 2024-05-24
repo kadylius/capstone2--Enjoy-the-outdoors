@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slider.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+   
+    <header class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">Parks Explorer</a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="national.html">National Parks</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mountains.html">Mountains</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Slider Section -->
+    <div class="container mt-5 text-center">
+        <h4>View all our National Parks</h4>
+        <p>&nbsp;<p>&nbsp;
+        <div class="d-flex justify-content-center">
+            <div class="slider">
+                <span style="--i:2;"><img src="images/Monroe-StoryImage_2.jpg" alt=""></span>
+                <span style="--i:3;"><img src="images/zion.jpeg" alt=""></span>
+                <span style="--i:3;"><img src="images/casa grande.jpeg" alt=""></span>
+                <span style="--i:3;"><img src="images/grand canyon.avif" alt=""></span>
+                <span style="--i:3;"><img src="images/Cabot-StoryImg.jpg" alt=""></span>
+                <span style="--i:4;"><img src="images/OwlsHead-StoryImg.jpg" alt=""></span>
+                <span style="--i:5;"><img src="images/Hancock-StoryImage_2.jpg" alt=""></span>
+                <span style="--i:6;"><img src="images/Jackson-StoryImg.jpg" alt=""></span>
+                <span style="--i:7;"><img src="images/Moriah-StoryImg.jpg" alt=""></span>
+            </div>
+        </div>
+    </div>
+
+    <p>&nbsp;<p>&nbsp;
+        <p>&nbsp;<p>&nbsp;
+
+       <!-- Main Content -->
+    <main>
+            <p>&nbsp;<p>&nbsp;
+            <p class="text-center fst-italic fs-5">Choose your next destination</p>
+            <div class="searchBtn-container">
+                <div class="left-container">
+                    <div>
+
+    <main class="flex-grow-1">
+        <div class="mountain-main card-text">
+            <section>
+
+                <!-- Prompt Section -->
+                <h5 class="text-center card-title" id="helpText">Select one</h5>
+
+                <div class="text-center py-2">
+                    <ul class="navbar-nav d-flex justify-content-center flex-wrap align-items-center">
+                        <li>
+                            <div class="btn rounded-button-green" id="btnStates">States</div>
+                            <div class="btn rounded-button-green" id="btnCategory">ID</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Park Dropdown Lists -->
+                <div>
+                    <div class="py-3 px-5 d-flex justify-content-center">
+                        <div id="locationSearchContainer" style="display: none;" class="green-capsule mb-3">
+                            <label for="locationSearch" class="text-white text-center">Search By State:</label>
+                            <select name="searchByLocation" id="locationSearch"></select>
+                        </div>
+
+                        <div id="parkTypeSearchContainer" style="display: none;" class="green-capsule mb-3">
+                            <label for="parkTypeSearch" class="text-white text-center">Search By ID:</label>
+                            <select name="searchByParkType" id="parkTypeSearch"></select>
+                        </div>
+
+                    </div>
+
+                    <!-- Park List -->
+                    <div class="px-5 py-2" id="parkResultList" style="display: none;">
+                        <div>
+                            <div id="info" class="adjusting-padding">
+                                <p class="d-flex justify-content-center">Please choose an option from one of the
+                                    dropdown</p>
+                            </div>
+                        </div>
+                    </div>
+    <button class="btn btn-primary me-2" onclick="search()">Search</button>
+    <button class="btn btn-secondary" onclick="clearFilter()">Clear Filter</button>
+</div>
+</div>
+</div>
+                </div>
+                <div class="displayBox mt-4">
+                    <h2 id="parkMessage"></h2>
+                    <div id="myParks" class="park-grid"></div>
+                </div>
+            </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+ <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <p>&copy; 2024 National Parks. All rights reserved.</p>
+        <p><a href="privacy.html" class="text-white">Privacy Policy</a> | <a href="terms.html" class="text-white">Terms of Service</a></p>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/navigation.js"></script>
+    <script src="locationData.js"></script>
+    <script src="parkTypeData.js"></script>
+    <script src="nationalParkData.js"></script>
+    <script src="national.js"></script>
+
+</body>
+
+</html>

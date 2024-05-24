@@ -1,0 +1,37 @@
+.banner-card {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-card img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px 0;
+}
+
+.slider span {
+    flex: 0 0 auto;
+    margin: 0 10px;
+}
+
+.slider img {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+}
